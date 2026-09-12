@@ -1,0 +1,28 @@
+YTConverter Third-Party Notices
+===============================
+
+This distribution contains compiled code from third-party Go modules and a
+frontend produced with third-party build tooling. Corresponding license texts
+available from the local dependency set are included under the licenses
+directory.
+
+Major runtime components include:
+
+- Wails v2.15.0 (MIT License)
+- Model Context Protocol Go SDK v1.6.1
+  (Apache-2.0 / MIT licensing transition; see the included license text)
+- modernc.org/sqlite v1.58.0 (BSD-style license)
+
+Managed dependencies are not bundled in the initial Portable package. When the
+user starts Dependency Setup, YTConverter downloads these components into the
+Portable tools directory:
+
+- yt-dlp: https://github.com/yt-dlp/yt-dlp
+- FFmpeg / ffprobe: https://ffmpeg.org/
+
+The license terms for downloaded managed dependencies are supplied by their
+respective projects/distributors. FFmpeg licensing can vary with the build
+configuration. Consult the files accompanying the downloaded distribution and
+the official project pages.
+
+YTConverter does not claim ownership of third-party project names or software.
